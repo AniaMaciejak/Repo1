@@ -1,0 +1,9 @@
+import random
+
+symbole =  "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+dlugosc = int(input("Podaj długość hasła" ))
+haslo = ""
+
+for _ in range(dlugosc):
+    haslo += random.choice(symbole)
+print("Hasło:", haslo)
